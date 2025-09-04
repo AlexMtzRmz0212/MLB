@@ -1,8 +1,8 @@
 import pandas as pd
 import folium
 import os
-from math import radians, sin, cos, sqrt, atan2, pi
-import numpy as np
+from math import radians, sin, cos, sqrt, atan2
+from branca.element import Template, MacroElement
 
 # Clear console
 os.system('cls' if os.name == 'nt' else 'clear')
@@ -20,7 +20,7 @@ league_colors = {
     'National': 'blue'
 }
 
-MIN_DISTANCE_KM = 140 # the higher, the more spaced out the markers
+MIN_DISTANCE_KM = 140 # minimum distance in km to avoid overlap
 ITERATIONS = 2 # the higher, the more iterations for separation
 DIV_FACTOR = 60 # the lower, the more separation
 
@@ -96,6 +96,25 @@ division_orders = {
 map = folium.Map(location=[38, -97], zoom_start=5, tiles='CartoDB positron')
 
 map.fit_bounds([[50 , -100], [30, -100]])
+legend_html = """
+{% macro html(this, kwargs) %}
+
+<div style="
+    position: fixed; 
+    bottom: 30px; left: 30px; width: 180px; height: 80px; 
+    border:2px solid grey; z-index:9999; font-size:14px;
+    background-color: white; opacity: 0.85; padding: 10px;">
+<b>Legend</b><br>
+<i style="color:red;">&#8212;</i> American League<br>
+<i style="color:blue;">&#8212;</i> National League
+</div>
+
+{% endmacro %}
+"""
+
+legend = MacroElement()
+legend._template = Template(legend_html)
+map.get_root().add_child(legend)
 
 # Haversine distance calculation
 def haversine_distance(p1, p2):
@@ -269,6 +288,34 @@ for division in mlb_df['FullDivision'].unique():
         folium.PolyLine(locations=path, color=line_color, weight=2.5, opacity=0.8).add_to(map)
     else:
         print(f"Warning: Not enough valid points for division '{division}' to draw a line")
+
+###################### IDEA: change the opacity of divisions ######################
+# legend_items = []
+# for division, teams in division_orders.items():
+#     league = division.split()[0]
+#     color = league_colors.get(league, "black")
+#     legend_items.append(f'<i style="color:{color};">&#8212;</i> {division}')
+
+# legend_html = f"""
+# {{% macro html(this, kwargs) %}}
+
+# <div style="
+#     position: fixed; 
+#     bottom: 30px; left: 30px; width: 230px; max-height: 250px; overflow-y:auto;
+#     border:2px solid grey; z-index:9999; font-size:13px;
+#     background-color: white; opacity: 0.85; padding: 10px;">
+# <b>Divisions</b><br>
+# {'<br>'.join(legend_items)}
+# </div>
+
+# {{% endmacro %}}
+# """
+
+# legend = MacroElement()
+# legend._template = Template(legend_html)
+# map.get_root().add_child(legend)
+
+
 
 # Save map
 map.save(OUTPUT_PATH)
