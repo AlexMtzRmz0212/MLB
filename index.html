@@ -1,0 +1,1988 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d7d99f38b3f0dcf61f4e838d9495e2be {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d7d99f38b3f0dcf61f4e838d9495e2be" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d7d99f38b3f0dcf61f4e838d9495e2be = L.map(
+                "map_d7d99f38b3f0dcf61f4e838d9495e2be",
+                {
+                    center: [38.0, -97.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8d7941287617d211f11c8d7d6fa0876e = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8d7941287617d211f11c8d7d6fa0876e.addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            map_d7d99f38b3f0dcf61f4e838d9495e2be.fitBounds(
+                [[50, -100], [30, -100]],
+                {}
+            );
+        
+    
+            var circle_marker_1efff4d13f1917690fb98370351f3473 = L.circleMarker(
+                [41.83, -87.633889],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            circle_marker_1efff4d13f1917690fb98370351f3473.bindTooltip(
+                `<div>
+                     Original location: Chicago White Sox
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_df62b1ebe6fe512f458cb771bc84b647 = L.marker(
+                [41.31406024811041, -89.03867304003698],
+                {
+}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+        var custom_icon_b6cea307015be5a3bedecb6344231f7f = L.icon({
+  "iconUrl": "https://www.mlbstatic.com/team-logos/team-cap-on-light/145.svg",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "popupAnchor": [0, -15],
+});
+        marker_df62b1ebe6fe512f458cb771bc84b647.setIcon(custom_icon_b6cea307015be5a3bedecb6344231f7f);
+        
+    
+        var popup_eac32be75eed0e4b48bc098e2fc90f40 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d9c7a66a3e2a9c06df84ae0d98fcda7 = $(`<div id="html_9d9c7a66a3e2a9c06df84ae0d98fcda7" style="width: 100.0%; height: 100.0%;"><b>Chicago White Sox</b><br>Central</div>`)[0];
+                popup_eac32be75eed0e4b48bc098e2fc90f40.setContent(html_9d9c7a66a3e2a9c06df84ae0d98fcda7);
+            
+        
+
+        marker_df62b1ebe6fe512f458cb771bc84b647.bindPopup(popup_eac32be75eed0e4b48bc098e2fc90f40)
+        ;
+
+        
+    
+    
+            marker_df62b1ebe6fe512f458cb771bc84b647.bindTooltip(
+                `<div>
+                     Chicago White Sox
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_df62b1ebe6fe512f458cb771bc84b647.setIcon(custom_icon_b6cea307015be5a3bedecb6344231f7f);
+            
+    
+            var circle_marker_86b098139bb1d718a257d1181037d28b = L.circleMarker(
+                [41.495833, -81.685278],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            circle_marker_86b098139bb1d718a257d1181037d28b.bindTooltip(
+                `<div>
+                     Original location: Cleveland Guardians
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ad1d90d5c2b07232de5d6592be9a8969 = L.marker(
+                [41.495833, -81.685278],
+                {
+}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+        var custom_icon_c83d9531540c351da827f3c39bcc7698 = L.icon({
+  "iconUrl": "https://www.mlbstatic.com/team-logos/team-cap-on-light/114.svg",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "popupAnchor": [0, -15],
+});
+        marker_ad1d90d5c2b07232de5d6592be9a8969.setIcon(custom_icon_c83d9531540c351da827f3c39bcc7698);
+        
+    
+        var popup_0668d93e3487a3342bd55f974e3b80c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d9495a9512baca5661a562a461fbe3a5 = $(`<div id="html_d9495a9512baca5661a562a461fbe3a5" style="width: 100.0%; height: 100.0%;"><b>Cleveland Guardians</b><br>Central</div>`)[0];
+                popup_0668d93e3487a3342bd55f974e3b80c5.setContent(html_d9495a9512baca5661a562a461fbe3a5);
+            
+        
+
+        marker_ad1d90d5c2b07232de5d6592be9a8969.bindPopup(popup_0668d93e3487a3342bd55f974e3b80c5)
+        ;
+
+        
+    
+    
+            marker_ad1d90d5c2b07232de5d6592be9a8969.bindTooltip(
+                `<div>
+                     Cleveland Guardians
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ad1d90d5c2b07232de5d6592be9a8969.setIcon(custom_icon_c83d9531540c351da827f3c39bcc7698);
+            
+    
+            var circle_marker_29261b7031e2fdf729d11b258ba8329a = L.circleMarker(
+                [42.339167, -83.048611],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            circle_marker_29261b7031e2fdf729d11b258ba8329a.bindTooltip(
+                `<div>
+                     Original location: Detroit Tigers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_420c1b4a8089f09aab6ea5a4e9ace5de = L.marker(
+                [42.339167, -83.048611],
+                {
+}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+        var custom_icon_dafed77a4f77ae049ef95afe5a83ef8a = L.icon({
+  "iconUrl": "https://www.mlbstatic.com/team-logos/team-cap-on-light/116.svg",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "popupAnchor": [0, -15],
+});
+        marker_420c1b4a8089f09aab6ea5a4e9ace5de.setIcon(custom_icon_dafed77a4f77ae049ef95afe5a83ef8a);
+        
+    
+        var popup_77dffe7e10c73ee9b5c253bad48a3594 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_674e280b1b81870395370224840d0808 = $(`<div id="html_674e280b1b81870395370224840d0808" style="width: 100.0%; height: 100.0%;"><b>Detroit Tigers</b><br>Central</div>`)[0];
+                popup_77dffe7e10c73ee9b5c253bad48a3594.setContent(html_674e280b1b81870395370224840d0808);
+            
+        
+
+        marker_420c1b4a8089f09aab6ea5a4e9ace5de.bindPopup(popup_77dffe7e10c73ee9b5c253bad48a3594)
+        ;
+
+        
+    
+    
+            marker_420c1b4a8089f09aab6ea5a4e9ace5de.bindTooltip(
+                `<div>
+                     Detroit Tigers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_420c1b4a8089f09aab6ea5a4e9ace5de.setIcon(custom_icon_dafed77a4f77ae049ef95afe5a83ef8a);
+            
+    
+            var circle_marker_e0a08d5125ff76c86ed3a3afe62be12a = L.circleMarker(
+                [39.051, -94.48],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            circle_marker_e0a08d5125ff76c86ed3a3afe62be12a.bindTooltip(
+                `<div>
+                     Original location: Kansas City Royals
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_71fb4f69ffd82540ea6051349c944d34 = L.marker(
+                [39.051, -94.48],
+                {
+}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+        var custom_icon_f3afe9428f53b4eb8586ae45dae36838 = L.icon({
+  "iconUrl": "https://www.mlbstatic.com/team-logos/team-cap-on-light/118.svg",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "popupAnchor": [0, -15],
+});
+        marker_71fb4f69ffd82540ea6051349c944d34.setIcon(custom_icon_f3afe9428f53b4eb8586ae45dae36838);
+        
+    
+        var popup_d9e0f39132363291360a06b6856e532b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7c61445af75a891c79955f1129f17871 = $(`<div id="html_7c61445af75a891c79955f1129f17871" style="width: 100.0%; height: 100.0%;"><b>Kansas City Royals</b><br>Central</div>`)[0];
+                popup_d9e0f39132363291360a06b6856e532b.setContent(html_7c61445af75a891c79955f1129f17871);
+            
+        
+
+        marker_71fb4f69ffd82540ea6051349c944d34.bindPopup(popup_d9e0f39132363291360a06b6856e532b)
+        ;
+
+        
+    
+    
+            marker_71fb4f69ffd82540ea6051349c944d34.bindTooltip(
+                `<div>
+                     Kansas City Royals
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_71fb4f69ffd82540ea6051349c944d34.setIcon(custom_icon_f3afe9428f53b4eb8586ae45dae36838);
+            
+    
+            var circle_marker_c5d1e3a4cf0391f2c88e822e54d88fb7 = L.circleMarker(
+                [44.981667, -93.278333],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            circle_marker_c5d1e3a4cf0391f2c88e822e54d88fb7.bindTooltip(
+                `<div>
+                     Original location: Minnesota Twins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6b3da613cbfe0a509b332dd0abc052a1 = L.marker(
+                [44.981667, -93.278333],
+                {
+}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+        var custom_icon_4a053a5da8bc3b3dfb6ce1588a8470cd = L.icon({
+  "iconUrl": "https://www.mlbstatic.com/team-logos/team-cap-on-light/142.svg",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "popupAnchor": [0, -15],
+});
+        marker_6b3da613cbfe0a509b332dd0abc052a1.setIcon(custom_icon_4a053a5da8bc3b3dfb6ce1588a8470cd);
+        
+    
+        var popup_b6aa5dc8e86513a122c35cabea84ad24 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9a5fa25df3d0f5f82b080fcae8ea7a50 = $(`<div id="html_9a5fa25df3d0f5f82b080fcae8ea7a50" style="width: 100.0%; height: 100.0%;"><b>Minnesota Twins</b><br>Central</div>`)[0];
+                popup_b6aa5dc8e86513a122c35cabea84ad24.setContent(html_9a5fa25df3d0f5f82b080fcae8ea7a50);
+            
+        
+
+        marker_6b3da613cbfe0a509b332dd0abc052a1.bindPopup(popup_b6aa5dc8e86513a122c35cabea84ad24)
+        ;
+
+        
+    
+    
+            marker_6b3da613cbfe0a509b332dd0abc052a1.bindTooltip(
+                `<div>
+                     Minnesota Twins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6b3da613cbfe0a509b332dd0abc052a1.setIcon(custom_icon_4a053a5da8bc3b3dfb6ce1588a8470cd);
+            
+    
+            var circle_marker_c1dcfc4389ccbb13903c9ba185dda254 = L.circleMarker(
+                [39.283889, -76.621667],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            circle_marker_c1dcfc4389ccbb13903c9ba185dda254.bindTooltip(
+                `<div>
+                     Original location: Baltimore Orioles
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c62892816335ed6a2eb01f0ebaa90ecc = L.marker(
+                [39.84768034549222, -77.88328482108794],
+                {
+}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+        var custom_icon_b71cf3ba00f22d3db0dec740265bcd86 = L.icon({
+  "iconUrl": "https://www.mlbstatic.com/team-logos/team-cap-on-light/110.svg",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "popupAnchor": [0, -15],
+});
+        marker_c62892816335ed6a2eb01f0ebaa90ecc.setIcon(custom_icon_b71cf3ba00f22d3db0dec740265bcd86);
+        
+    
+        var popup_fa632d95fefdbb2f0b339a8316d48640 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f7a6c90e1bd73b7270db638fb5ce53a6 = $(`<div id="html_f7a6c90e1bd73b7270db638fb5ce53a6" style="width: 100.0%; height: 100.0%;"><b>Baltimore Orioles</b><br>East</div>`)[0];
+                popup_fa632d95fefdbb2f0b339a8316d48640.setContent(html_f7a6c90e1bd73b7270db638fb5ce53a6);
+            
+        
+
+        marker_c62892816335ed6a2eb01f0ebaa90ecc.bindPopup(popup_fa632d95fefdbb2f0b339a8316d48640)
+        ;
+
+        
+    
+    
+            marker_c62892816335ed6a2eb01f0ebaa90ecc.bindTooltip(
+                `<div>
+                     Baltimore Orioles
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c62892816335ed6a2eb01f0ebaa90ecc.setIcon(custom_icon_b71cf3ba00f22d3db0dec740265bcd86);
+            
+    
+            var circle_marker_7279f518985e01a882415ce2a0f6186e = L.circleMarker(
+                [42.34625, -71.09775],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            circle_marker_7279f518985e01a882415ce2a0f6186e.bindTooltip(
+                `<div>
+                     Original location: Boston Red Sox
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_79111391404f7e9382405c98df7411a6 = L.marker(
+                [42.34625, -71.09775],
+                {
+}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+        var custom_icon_5357e24b66016bd9eba69bab5075d35f = L.icon({
+  "iconUrl": "https://www.mlbstatic.com/team-logos/team-cap-on-light/111.svg",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "popupAnchor": [0, -15],
+});
+        marker_79111391404f7e9382405c98df7411a6.setIcon(custom_icon_5357e24b66016bd9eba69bab5075d35f);
+        
+    
+        var popup_4a2857a177d746cb104ba3bec458ec74 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_53b37db5c94869ec89c95ca4830e6957 = $(`<div id="html_53b37db5c94869ec89c95ca4830e6957" style="width: 100.0%; height: 100.0%;"><b>Boston Red Sox</b><br>East</div>`)[0];
+                popup_4a2857a177d746cb104ba3bec458ec74.setContent(html_53b37db5c94869ec89c95ca4830e6957);
+            
+        
+
+        marker_79111391404f7e9382405c98df7411a6.bindPopup(popup_4a2857a177d746cb104ba3bec458ec74)
+        ;
+
+        
+    
+    
+            marker_79111391404f7e9382405c98df7411a6.bindTooltip(
+                `<div>
+                     Boston Red Sox
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_79111391404f7e9382405c98df7411a6.setIcon(custom_icon_5357e24b66016bd9eba69bab5075d35f);
+            
+    
+            var circle_marker_b907ffc34b25faac61cfaa5a773fb508 = L.circleMarker(
+                [40.829167, -73.926389],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            circle_marker_b907ffc34b25faac61cfaa5a773fb508.bindTooltip(
+                `<div>
+                     Original location: New York Yankees
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c751736484f026ee1752deed00756ac2 = L.marker(
+                [42.84972062173009, -75.46811657851211],
+                {
+}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+        var custom_icon_4596d7bedeb9483be269c4a695fb4fb9 = L.icon({
+  "iconUrl": "https://www.mlbstatic.com/team-logos/team-cap-on-light/147.svg",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "popupAnchor": [0, -15],
+});
+        marker_c751736484f026ee1752deed00756ac2.setIcon(custom_icon_4596d7bedeb9483be269c4a695fb4fb9);
+        
+    
+        var popup_b4e25925017486aa818ae62c04946187 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_320bb00690096f29de11923562fddf5b = $(`<div id="html_320bb00690096f29de11923562fddf5b" style="width: 100.0%; height: 100.0%;"><b>New York Yankees</b><br>East</div>`)[0];
+                popup_b4e25925017486aa818ae62c04946187.setContent(html_320bb00690096f29de11923562fddf5b);
+            
+        
+
+        marker_c751736484f026ee1752deed00756ac2.bindPopup(popup_b4e25925017486aa818ae62c04946187)
+        ;
+
+        
+    
+    
+            marker_c751736484f026ee1752deed00756ac2.bindTooltip(
+                `<div>
+                     New York Yankees
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c751736484f026ee1752deed00756ac2.setIcon(custom_icon_4596d7bedeb9483be269c4a695fb4fb9);
+            
+    
+            var circle_marker_fdb6dd44b89e51a11d0f029ea5aa2d34 = L.circleMarker(
+                [27.768333, -82.653333],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            circle_marker_fdb6dd44b89e51a11d0f029ea5aa2d34.bindTooltip(
+                `<div>
+                     Original location: Tampa Bay Rays
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2cbbc3849870cd84e179f575577961c2 = L.marker(
+                [27.768333, -82.653333],
+                {
+}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+        var custom_icon_46d992c0fae98404d90cf51646af2946 = L.icon({
+  "iconUrl": "https://www.mlbstatic.com/team-logos/team-cap-on-light/139.svg",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "popupAnchor": [0, -15],
+});
+        marker_2cbbc3849870cd84e179f575577961c2.setIcon(custom_icon_46d992c0fae98404d90cf51646af2946);
+        
+    
+        var popup_0f4c24fcc396b90093dcde04c56990d8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f6c3df23c237e7f43f73440e91b5f5af = $(`<div id="html_f6c3df23c237e7f43f73440e91b5f5af" style="width: 100.0%; height: 100.0%;"><b>Tampa Bay Rays</b><br>East</div>`)[0];
+                popup_0f4c24fcc396b90093dcde04c56990d8.setContent(html_f6c3df23c237e7f43f73440e91b5f5af);
+            
+        
+
+        marker_2cbbc3849870cd84e179f575577961c2.bindPopup(popup_0f4c24fcc396b90093dcde04c56990d8)
+        ;
+
+        
+    
+    
+            marker_2cbbc3849870cd84e179f575577961c2.bindTooltip(
+                `<div>
+                     Tampa Bay Rays
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2cbbc3849870cd84e179f575577961c2.setIcon(custom_icon_46d992c0fae98404d90cf51646af2946);
+            
+    
+            var circle_marker_475866cf78f3ee108f6d4e5314798e24 = L.circleMarker(
+                [43.641389, -79.389167],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            circle_marker_475866cf78f3ee108f6d4e5314798e24.bindTooltip(
+                `<div>
+                     Original location: Toronto Blue Jays
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_036397b8bc91b34a3ac6d8b8c173ec64 = L.marker(
+                [43.641389, -79.389167],
+                {
+}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+        var custom_icon_20e80f72b16c5b498421687067697a24 = L.icon({
+  "iconUrl": "https://www.mlbstatic.com/team-logos/team-cap-on-light/141.svg",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "popupAnchor": [0, -15],
+});
+        marker_036397b8bc91b34a3ac6d8b8c173ec64.setIcon(custom_icon_20e80f72b16c5b498421687067697a24);
+        
+    
+        var popup_af7b4625b64ba1b8f52f0a1aeca8d132 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f706d3319c286bb5e8a3af464e0641c4 = $(`<div id="html_f706d3319c286bb5e8a3af464e0641c4" style="width: 100.0%; height: 100.0%;"><b>Toronto Blue Jays</b><br>East</div>`)[0];
+                popup_af7b4625b64ba1b8f52f0a1aeca8d132.setContent(html_f706d3319c286bb5e8a3af464e0641c4);
+            
+        
+
+        marker_036397b8bc91b34a3ac6d8b8c173ec64.bindPopup(popup_af7b4625b64ba1b8f52f0a1aeca8d132)
+        ;
+
+        
+    
+    
+            marker_036397b8bc91b34a3ac6d8b8c173ec64.bindTooltip(
+                `<div>
+                     Toronto Blue Jays
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_036397b8bc91b34a3ac6d8b8c173ec64.setIcon(custom_icon_20e80f72b16c5b498421687067697a24);
+            
+    
+            var circle_marker_fbacd8fbca427a2a8378652ab575b83f = L.circleMarker(
+                [37.751667, -122.200556],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            circle_marker_fbacd8fbca427a2a8378652ab575b83f.bindTooltip(
+                `<div>
+                     Original location: Athletics
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_37595af03eb399a769dcf54fe573069f = L.marker(
+                [37.46267874254589, -120.12771878603397],
+                {
+}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+        var custom_icon_9e99bf07d9dc8eb06d34789ea61bdc88 = L.icon({
+  "iconUrl": "https://www.mlbstatic.com/team-logos/team-cap-on-light/133.svg",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "popupAnchor": [0, -15],
+});
+        marker_37595af03eb399a769dcf54fe573069f.setIcon(custom_icon_9e99bf07d9dc8eb06d34789ea61bdc88);
+        
+    
+        var popup_c4a76fe81456b0aa7aa4849ac28d563c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6f1297185cbe4830c9ffb77a80f738fe = $(`<div id="html_6f1297185cbe4830c9ffb77a80f738fe" style="width: 100.0%; height: 100.0%;"><b>Athletics</b><br>West</div>`)[0];
+                popup_c4a76fe81456b0aa7aa4849ac28d563c.setContent(html_6f1297185cbe4830c9ffb77a80f738fe);
+            
+        
+
+        marker_37595af03eb399a769dcf54fe573069f.bindPopup(popup_c4a76fe81456b0aa7aa4849ac28d563c)
+        ;
+
+        
+    
+    
+            marker_37595af03eb399a769dcf54fe573069f.bindTooltip(
+                `<div>
+                     Athletics
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_37595af03eb399a769dcf54fe573069f.setIcon(custom_icon_9e99bf07d9dc8eb06d34789ea61bdc88);
+            
+    
+            var circle_marker_e808f3e258f44f8729270daa5bf70bcd = L.circleMarker(
+                [29.756944, -95.355556],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            circle_marker_e808f3e258f44f8729270daa5bf70bcd.bindTooltip(
+                `<div>
+                     Original location: Houston Astros
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7bbcc685db75e104275cb5a2ee02485f = L.marker(
+                [29.756944, -95.355556],
+                {
+}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+        var custom_icon_2df60eda5c4eef05fdf9a376cb1cb34c = L.icon({
+  "iconUrl": "https://www.mlbstatic.com/team-logos/team-primary-on-light/117.svg",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "popupAnchor": [0, -15],
+});
+        marker_7bbcc685db75e104275cb5a2ee02485f.setIcon(custom_icon_2df60eda5c4eef05fdf9a376cb1cb34c);
+        
+    
+        var popup_87976f56dc0d1a6ad722d44314ba18bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_557bd5341067c4b0c9bdc8ebd4caa27b = $(`<div id="html_557bd5341067c4b0c9bdc8ebd4caa27b" style="width: 100.0%; height: 100.0%;"><b>Houston Astros</b><br>West</div>`)[0];
+                popup_87976f56dc0d1a6ad722d44314ba18bc.setContent(html_557bd5341067c4b0c9bdc8ebd4caa27b);
+            
+        
+
+        marker_7bbcc685db75e104275cb5a2ee02485f.bindPopup(popup_87976f56dc0d1a6ad722d44314ba18bc)
+        ;
+
+        
+    
+    
+            marker_7bbcc685db75e104275cb5a2ee02485f.bindTooltip(
+                `<div>
+                     Houston Astros
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7bbcc685db75e104275cb5a2ee02485f.setIcon(custom_icon_2df60eda5c4eef05fdf9a376cb1cb34c);
+            
+    
+            var circle_marker_a14c3ce9efef553c15d2208fe07975a6 = L.circleMarker(
+                [33.800278, -117.882778],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            circle_marker_a14c3ce9efef553c15d2208fe07975a6.bindTooltip(
+                `<div>
+                     Original location: Los Angeles Angels
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_37472531319b0c8e18e7fbdf19dd586e = L.marker(
+                [33.82717329968392, -115.83710338244623],
+                {
+}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+        var custom_icon_56e11e9892817e2d3f3eb37400c9c093 = L.icon({
+  "iconUrl": "https://www.mlbstatic.com/team-logos/team-cap-on-light/108.svg",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "popupAnchor": [0, -15],
+});
+        marker_37472531319b0c8e18e7fbdf19dd586e.setIcon(custom_icon_56e11e9892817e2d3f3eb37400c9c093);
+        
+    
+        var popup_dc9c35801ea5deafa0fe853d98219e25 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_15c4e3eb180764b412f2e01f66934035 = $(`<div id="html_15c4e3eb180764b412f2e01f66934035" style="width: 100.0%; height: 100.0%;"><b>Los Angeles Angels</b><br>West</div>`)[0];
+                popup_dc9c35801ea5deafa0fe853d98219e25.setContent(html_15c4e3eb180764b412f2e01f66934035);
+            
+        
+
+        marker_37472531319b0c8e18e7fbdf19dd586e.bindPopup(popup_dc9c35801ea5deafa0fe853d98219e25)
+        ;
+
+        
+    
+    
+            marker_37472531319b0c8e18e7fbdf19dd586e.bindTooltip(
+                `<div>
+                     Los Angeles Angels
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_37472531319b0c8e18e7fbdf19dd586e.setIcon(custom_icon_56e11e9892817e2d3f3eb37400c9c093);
+            
+    
+            var circle_marker_da4c4d202ef323b9eb898f09f6dd8798 = L.circleMarker(
+                [47.591, -122.333],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            circle_marker_da4c4d202ef323b9eb898f09f6dd8798.bindTooltip(
+                `<div>
+                     Original location: Seattle Mariners
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f5257510208781c7e517a0849e93c9f0 = L.marker(
+                [47.591, -122.333],
+                {
+}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+        var custom_icon_e4481099140509f8b84c415b04b0d674 = L.icon({
+  "iconUrl": "https://www.mlbstatic.com/team-logos/team-primary-on-light/136.svg",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "popupAnchor": [0, -15],
+});
+        marker_f5257510208781c7e517a0849e93c9f0.setIcon(custom_icon_e4481099140509f8b84c415b04b0d674);
+        
+    
+        var popup_b7365a0da79dec133eea72327fc3581e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c177bead821c4e2372215a5258c89439 = $(`<div id="html_c177bead821c4e2372215a5258c89439" style="width: 100.0%; height: 100.0%;"><b>Seattle Mariners</b><br>West</div>`)[0];
+                popup_b7365a0da79dec133eea72327fc3581e.setContent(html_c177bead821c4e2372215a5258c89439);
+            
+        
+
+        marker_f5257510208781c7e517a0849e93c9f0.bindPopup(popup_b7365a0da79dec133eea72327fc3581e)
+        ;
+
+        
+    
+    
+            marker_f5257510208781c7e517a0849e93c9f0.bindTooltip(
+                `<div>
+                     Seattle Mariners
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f5257510208781c7e517a0849e93c9f0.setIcon(custom_icon_e4481099140509f8b84c415b04b0d674);
+            
+    
+            var circle_marker_31c98f867e89dde622199a0c4a3b993e = L.circleMarker(
+                [32.747361, -97.084167],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            circle_marker_31c98f867e89dde622199a0c4a3b993e.bindTooltip(
+                `<div>
+                     Original location: Texas Rangers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6ec7939fb85794cc9b7c3ff1b674a28c = L.marker(
+                [32.747361, -97.084167],
+                {
+}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+        var custom_icon_030e1cf0bfb88886e608b99fb06bf4ef = L.icon({
+  "iconUrl": "https://www.mlbstatic.com/team-logos/team-cap-on-light/140.svg",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "popupAnchor": [0, -15],
+});
+        marker_6ec7939fb85794cc9b7c3ff1b674a28c.setIcon(custom_icon_030e1cf0bfb88886e608b99fb06bf4ef);
+        
+    
+        var popup_0c73d72cc7ccdbef38104e6f2d59c6df = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef046880e5ad8bd4feb949a169b013f1 = $(`<div id="html_ef046880e5ad8bd4feb949a169b013f1" style="width: 100.0%; height: 100.0%;"><b>Texas Rangers</b><br>West</div>`)[0];
+                popup_0c73d72cc7ccdbef38104e6f2d59c6df.setContent(html_ef046880e5ad8bd4feb949a169b013f1);
+            
+        
+
+        marker_6ec7939fb85794cc9b7c3ff1b674a28c.bindPopup(popup_0c73d72cc7ccdbef38104e6f2d59c6df)
+        ;
+
+        
+    
+    
+            marker_6ec7939fb85794cc9b7c3ff1b674a28c.bindTooltip(
+                `<div>
+                     Texas Rangers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6ec7939fb85794cc9b7c3ff1b674a28c.setIcon(custom_icon_030e1cf0bfb88886e608b99fb06bf4ef);
+            
+    
+            var circle_marker_cb976d1256cf33cf4df8d9d0a4af6f2a = L.circleMarker(
+                [41.948056, -87.655556],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            circle_marker_cb976d1256cf33cf4df8d9d0a4af6f2a.bindTooltip(
+                `<div>
+                     Original location: Chicago Cubs
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c7507ca62bf34b0628d87f1f40be19b1 = L.marker(
+                [42.07140730007873, -86.00806704893843],
+                {
+}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+        var custom_icon_33f7d242aff2f3013854c474b6a7f722 = L.icon({
+  "iconUrl": "https://www.mlbstatic.com/team-logos/team-cap-on-light/112.svg",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "popupAnchor": [0, -15],
+});
+        marker_c7507ca62bf34b0628d87f1f40be19b1.setIcon(custom_icon_33f7d242aff2f3013854c474b6a7f722);
+        
+    
+        var popup_82b40f6443ee46320ec099e20278e836 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ec8d8d1ded7b0369adb25c1066fcd84d = $(`<div id="html_ec8d8d1ded7b0369adb25c1066fcd84d" style="width: 100.0%; height: 100.0%;"><b>Chicago Cubs</b><br>Central</div>`)[0];
+                popup_82b40f6443ee46320ec099e20278e836.setContent(html_ec8d8d1ded7b0369adb25c1066fcd84d);
+            
+        
+
+        marker_c7507ca62bf34b0628d87f1f40be19b1.bindPopup(popup_82b40f6443ee46320ec099e20278e836)
+        ;
+
+        
+    
+    
+            marker_c7507ca62bf34b0628d87f1f40be19b1.bindTooltip(
+                `<div>
+                     Chicago Cubs
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c7507ca62bf34b0628d87f1f40be19b1.setIcon(custom_icon_33f7d242aff2f3013854c474b6a7f722);
+            
+    
+            var circle_marker_2db90d3faf7dea3e04355fadc6025972 = L.circleMarker(
+                [39.0975, -84.506667],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            circle_marker_2db90d3faf7dea3e04355fadc6025972.bindTooltip(
+                `<div>
+                     Original location: Cincinnati Reds
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3573b8cbfbdc7731216f2913a24c8971 = L.marker(
+                [39.0975, -84.506667],
+                {
+}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+        var custom_icon_b1045268d678ca44277e658a6160728f = L.icon({
+  "iconUrl": "https://www.mlbstatic.com/team-logos/team-cap-on-light/113.svg",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "popupAnchor": [0, -15],
+});
+        marker_3573b8cbfbdc7731216f2913a24c8971.setIcon(custom_icon_b1045268d678ca44277e658a6160728f);
+        
+    
+        var popup_6e5aef260f02eea6e8806f4a8baca5c4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d0a2534651eaf976111660f3a34d0d5 = $(`<div id="html_5d0a2534651eaf976111660f3a34d0d5" style="width: 100.0%; height: 100.0%;"><b>Cincinnati Reds</b><br>Central</div>`)[0];
+                popup_6e5aef260f02eea6e8806f4a8baca5c4.setContent(html_5d0a2534651eaf976111660f3a34d0d5);
+            
+        
+
+        marker_3573b8cbfbdc7731216f2913a24c8971.bindPopup(popup_6e5aef260f02eea6e8806f4a8baca5c4)
+        ;
+
+        
+    
+    
+            marker_3573b8cbfbdc7731216f2913a24c8971.bindTooltip(
+                `<div>
+                     Cincinnati Reds
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3573b8cbfbdc7731216f2913a24c8971.setIcon(custom_icon_b1045268d678ca44277e658a6160728f);
+            
+    
+            var circle_marker_a70c6e2ef66d9ea30bef96bd618d4a01 = L.circleMarker(
+                [43.028333, -87.971111],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            circle_marker_a70c6e2ef66d9ea30bef96bd618d4a01.bindTooltip(
+                `<div>
+                     Original location: Milwaukee Brewers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_791b598512c6a8c340d04341bfee6c5b = L.marker(
+                [43.42092145181086, -88.21381591102458],
+                {
+}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+        var custom_icon_d6983ac9a8dd4e5927090a377f455e10 = L.icon({
+  "iconUrl": "https://www.mlbstatic.com/team-logos/team-cap-on-light/158.svg",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "popupAnchor": [0, -15],
+});
+        marker_791b598512c6a8c340d04341bfee6c5b.setIcon(custom_icon_d6983ac9a8dd4e5927090a377f455e10);
+        
+    
+        var popup_a74f110fd31490525169a65a5b90ef73 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_747334def155dbd97c2036df3e73c3b9 = $(`<div id="html_747334def155dbd97c2036df3e73c3b9" style="width: 100.0%; height: 100.0%;"><b>Milwaukee Brewers</b><br>Central</div>`)[0];
+                popup_a74f110fd31490525169a65a5b90ef73.setContent(html_747334def155dbd97c2036df3e73c3b9);
+            
+        
+
+        marker_791b598512c6a8c340d04341bfee6c5b.bindPopup(popup_a74f110fd31490525169a65a5b90ef73)
+        ;
+
+        
+    
+    
+            marker_791b598512c6a8c340d04341bfee6c5b.bindTooltip(
+                `<div>
+                     Milwaukee Brewers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_791b598512c6a8c340d04341bfee6c5b.setIcon(custom_icon_d6983ac9a8dd4e5927090a377f455e10);
+            
+    
+            var circle_marker_40dbe1f5a0edc038771d7a3c2ed0bdd4 = L.circleMarker(
+                [40.446944, -80.005833],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            circle_marker_40dbe1f5a0edc038771d7a3c2ed0bdd4.bindTooltip(
+                `<div>
+                     Original location: Pittsburgh Pirates
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3f60cbaef6b778b6781cc2e2cefb256b = L.marker(
+                [40.446944, -80.005833],
+                {
+}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+        var custom_icon_b9e7259704a684c9dab007e887f12330 = L.icon({
+  "iconUrl": "https://www.mlbstatic.com/team-logos/team-cap-on-light/134.svg",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "popupAnchor": [0, -15],
+});
+        marker_3f60cbaef6b778b6781cc2e2cefb256b.setIcon(custom_icon_b9e7259704a684c9dab007e887f12330);
+        
+    
+        var popup_5e930e93a077c36e5dd7865f55a527d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa2eb73260d3e3a74696a2876d0035b6 = $(`<div id="html_aa2eb73260d3e3a74696a2876d0035b6" style="width: 100.0%; height: 100.0%;"><b>Pittsburgh Pirates</b><br>Central</div>`)[0];
+                popup_5e930e93a077c36e5dd7865f55a527d3.setContent(html_aa2eb73260d3e3a74696a2876d0035b6);
+            
+        
+
+        marker_3f60cbaef6b778b6781cc2e2cefb256b.bindPopup(popup_5e930e93a077c36e5dd7865f55a527d3)
+        ;
+
+        
+    
+    
+            marker_3f60cbaef6b778b6781cc2e2cefb256b.bindTooltip(
+                `<div>
+                     Pittsburgh Pirates
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3f60cbaef6b778b6781cc2e2cefb256b.setIcon(custom_icon_b9e7259704a684c9dab007e887f12330);
+            
+    
+            var circle_marker_e63507b10eca538b6baf5c7e17fbebc3 = L.circleMarker(
+                [38.6225, -90.193056],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            circle_marker_e63507b10eca538b6baf5c7e17fbebc3.bindTooltip(
+                `<div>
+                     Original location: St. Louis Cardinals
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7454f305cfce923d186e91787534ba0c = L.marker(
+                [38.6225, -90.193056],
+                {
+}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+        var custom_icon_00d7fb1f44241cb0247f779f9435ac72 = L.icon({
+  "iconUrl": "https://www.mlbstatic.com/team-logos/team-cap-on-light/138.svg",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "popupAnchor": [0, -15],
+});
+        marker_7454f305cfce923d186e91787534ba0c.setIcon(custom_icon_00d7fb1f44241cb0247f779f9435ac72);
+        
+    
+        var popup_6011a67670471b3a749b92f64f2783a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_802325e6bd32d6651ceb4a4cedd2df64 = $(`<div id="html_802325e6bd32d6651ceb4a4cedd2df64" style="width: 100.0%; height: 100.0%;"><b>St. Louis Cardinals</b><br>Central</div>`)[0];
+                popup_6011a67670471b3a749b92f64f2783a5.setContent(html_802325e6bd32d6651ceb4a4cedd2df64);
+            
+        
+
+        marker_7454f305cfce923d186e91787534ba0c.bindPopup(popup_6011a67670471b3a749b92f64f2783a5)
+        ;
+
+        
+    
+    
+            marker_7454f305cfce923d186e91787534ba0c.bindTooltip(
+                `<div>
+                     St. Louis Cardinals
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7454f305cfce923d186e91787534ba0c.setIcon(custom_icon_00d7fb1f44241cb0247f779f9435ac72);
+            
+    
+            var circle_marker_261f8c9404b86bc68aac47d3db8af3c5 = L.circleMarker(
+                [33.89, -84.468],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            circle_marker_261f8c9404b86bc68aac47d3db8af3c5.bindTooltip(
+                `<div>
+                     Original location: Atlanta Braves
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1d0b478ac926838c5ae9671b26121b29 = L.marker(
+                [33.89, -84.468],
+                {
+}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+        var custom_icon_5c6816f4474b1d9213c669a56cb511c5 = L.icon({
+  "iconUrl": "https://www.mlbstatic.com/team-logos/team-cap-on-light/144.svg",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "popupAnchor": [0, -15],
+});
+        marker_1d0b478ac926838c5ae9671b26121b29.setIcon(custom_icon_5c6816f4474b1d9213c669a56cb511c5);
+        
+    
+        var popup_d76e8019e2ad1812faccd15e9f2b07a2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a48df0bdf3368b79571b66db3be24275 = $(`<div id="html_a48df0bdf3368b79571b66db3be24275" style="width: 100.0%; height: 100.0%;"><b>Atlanta Braves</b><br>East</div>`)[0];
+                popup_d76e8019e2ad1812faccd15e9f2b07a2.setContent(html_a48df0bdf3368b79571b66db3be24275);
+            
+        
+
+        marker_1d0b478ac926838c5ae9671b26121b29.bindPopup(popup_d76e8019e2ad1812faccd15e9f2b07a2)
+        ;
+
+        
+    
+    
+            marker_1d0b478ac926838c5ae9671b26121b29.bindTooltip(
+                `<div>
+                     Atlanta Braves
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1d0b478ac926838c5ae9671b26121b29.setIcon(custom_icon_5c6816f4474b1d9213c669a56cb511c5);
+            
+    
+            var circle_marker_cbdec8857785bd6569804aad85f97890 = L.circleMarker(
+                [25.778056, -80.219722],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            circle_marker_cbdec8857785bd6569804aad85f97890.bindTooltip(
+                `<div>
+                     Original location: Miami Marlins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2399f4e21c2efc7c29c7ba88ea566cd5 = L.marker(
+                [25.778056, -80.219722],
+                {
+}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+        var custom_icon_68c1db3ed72f924aa14a220244d7e6b8 = L.icon({
+  "iconUrl": "https://www.mlbstatic.com/team-logos/team-cap-on-light/146.svg",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "popupAnchor": [0, -15],
+});
+        marker_2399f4e21c2efc7c29c7ba88ea566cd5.setIcon(custom_icon_68c1db3ed72f924aa14a220244d7e6b8);
+        
+    
+        var popup_bf3bd5a328cdbb76bcccfc51d9f6021f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_64d842894ee606aa15d3f112d6340b14 = $(`<div id="html_64d842894ee606aa15d3f112d6340b14" style="width: 100.0%; height: 100.0%;"><b>Miami Marlins</b><br>East</div>`)[0];
+                popup_bf3bd5a328cdbb76bcccfc51d9f6021f.setContent(html_64d842894ee606aa15d3f112d6340b14);
+            
+        
+
+        marker_2399f4e21c2efc7c29c7ba88ea566cd5.bindPopup(popup_bf3bd5a328cdbb76bcccfc51d9f6021f)
+        ;
+
+        
+    
+    
+            marker_2399f4e21c2efc7c29c7ba88ea566cd5.bindTooltip(
+                `<div>
+                     Miami Marlins
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2399f4e21c2efc7c29c7ba88ea566cd5.setIcon(custom_icon_68c1db3ed72f924aa14a220244d7e6b8);
+            
+    
+            var circle_marker_9f14f7301bf28b91ba830f1b495d47ec = L.circleMarker(
+                [40.756944, -73.845833],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            circle_marker_9f14f7301bf28b91ba830f1b495d47ec.bindTooltip(
+                `<div>
+                     Original location: New York Mets
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1fe772df02fde71ecdaa300da16118a2 = L.marker(
+                [38.7363903782699, -72.30410542148789],
+                {
+}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+        var custom_icon_148a8bb942355a3f893d43f5db8d4a24 = L.icon({
+  "iconUrl": "https://www.mlbstatic.com/team-logos/team-cap-on-light/121.svg",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "popupAnchor": [0, -15],
+});
+        marker_1fe772df02fde71ecdaa300da16118a2.setIcon(custom_icon_148a8bb942355a3f893d43f5db8d4a24);
+        
+    
+        var popup_6552ec789547dbaafe2f88b75491f89f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f0395005a5e0a10f740586f624629bec = $(`<div id="html_f0395005a5e0a10f740586f624629bec" style="width: 100.0%; height: 100.0%;"><b>New York Mets</b><br>East</div>`)[0];
+                popup_6552ec789547dbaafe2f88b75491f89f.setContent(html_f0395005a5e0a10f740586f624629bec);
+            
+        
+
+        marker_1fe772df02fde71ecdaa300da16118a2.bindPopup(popup_6552ec789547dbaafe2f88b75491f89f)
+        ;
+
+        
+    
+    
+            marker_1fe772df02fde71ecdaa300da16118a2.bindTooltip(
+                `<div>
+                     New York Mets
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1fe772df02fde71ecdaa300da16118a2.setIcon(custom_icon_148a8bb942355a3f893d43f5db8d4a24);
+            
+    
+            var circle_marker_65e064fc297fc29ae9ba1ab4adf18fe3 = L.circleMarker(
+                [39.905833, -75.166389],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            circle_marker_65e064fc297fc29ae9ba1ab4adf18fe3.bindTooltip(
+                `<div>
+                     Original location: Philadelphia Phillies
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0c4078b4103733640b753febf3b1a4ae = L.marker(
+                [39.905833, -75.166389],
+                {
+}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+        var custom_icon_7932347a85dd7846d15061006ad4eff6 = L.icon({
+  "iconUrl": "https://www.mlbstatic.com/team-logos/team-cap-on-light/143.svg",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "popupAnchor": [0, -15],
+});
+        marker_0c4078b4103733640b753febf3b1a4ae.setIcon(custom_icon_7932347a85dd7846d15061006ad4eff6);
+        
+    
+        var popup_45be7b0e0cc43008363294036727a730 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ce1175f54a61302c9fef069477440c3 = $(`<div id="html_5ce1175f54a61302c9fef069477440c3" style="width: 100.0%; height: 100.0%;"><b>Philadelphia Phillies</b><br>East</div>`)[0];
+                popup_45be7b0e0cc43008363294036727a730.setContent(html_5ce1175f54a61302c9fef069477440c3);
+            
+        
+
+        marker_0c4078b4103733640b753febf3b1a4ae.bindPopup(popup_45be7b0e0cc43008363294036727a730)
+        ;
+
+        
+    
+    
+            marker_0c4078b4103733640b753febf3b1a4ae.bindTooltip(
+                `<div>
+                     Philadelphia Phillies
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0c4078b4103733640b753febf3b1a4ae.setIcon(custom_icon_7932347a85dd7846d15061006ad4eff6);
+            
+    
+            var circle_marker_a1ff1dbaa56055b3a1ce0102690af60f = L.circleMarker(
+                [38.872778, -77.0075],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            circle_marker_a1ff1dbaa56055b3a1ce0102690af60f.bindTooltip(
+                `<div>
+                     Original location: Washington Nationals
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b391ae1decd6807ab886a54b57ac0765 = L.marker(
+                [38.30898665450778, -75.74588217891205],
+                {
+}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+        var custom_icon_a16556560acb9edd5a77de35fbab356d = L.icon({
+  "iconUrl": "https://www.mlbstatic.com/team-logos/team-cap-on-light/120.svg",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "popupAnchor": [0, -15],
+});
+        marker_b391ae1decd6807ab886a54b57ac0765.setIcon(custom_icon_a16556560acb9edd5a77de35fbab356d);
+        
+    
+        var popup_0da07722fcb711e0f1cb107e0a210cc6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1e997ebe75fc9cd535583206ea59559f = $(`<div id="html_1e997ebe75fc9cd535583206ea59559f" style="width: 100.0%; height: 100.0%;"><b>Washington Nationals</b><br>East</div>`)[0];
+                popup_0da07722fcb711e0f1cb107e0a210cc6.setContent(html_1e997ebe75fc9cd535583206ea59559f);
+            
+        
+
+        marker_b391ae1decd6807ab886a54b57ac0765.bindPopup(popup_0da07722fcb711e0f1cb107e0a210cc6)
+        ;
+
+        
+    
+    
+            marker_b391ae1decd6807ab886a54b57ac0765.bindTooltip(
+                `<div>
+                     Washington Nationals
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b391ae1decd6807ab886a54b57ac0765.setIcon(custom_icon_a16556560acb9edd5a77de35fbab356d);
+            
+    
+            var circle_marker_26d8fc8f0f0f91ece190ae67a080daf7 = L.circleMarker(
+                [33.445278, -112.066944],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            circle_marker_26d8fc8f0f0f91ece190ae67a080daf7.bindTooltip(
+                `<div>
+                     Original location: Arizona Diamondbacks
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a772e92f46cdf948c0c1de2bbd330fd3 = L.marker(
+                [33.445278, -112.066944],
+                {
+}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+        var custom_icon_7e9d80867cbc186d5afde6e94b7c5861 = L.icon({
+  "iconUrl": "https://www.mlbstatic.com/team-logos/team-cap-on-light/109.svg",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "popupAnchor": [0, -15],
+});
+        marker_a772e92f46cdf948c0c1de2bbd330fd3.setIcon(custom_icon_7e9d80867cbc186d5afde6e94b7c5861);
+        
+    
+        var popup_c33edd59a05370aa77628cbdb4ef1a97 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4dc3f3d1ffd80efe87f72e93a2b9daf3 = $(`<div id="html_4dc3f3d1ffd80efe87f72e93a2b9daf3" style="width: 100.0%; height: 100.0%;"><b>Arizona Diamondbacks</b><br>West</div>`)[0];
+                popup_c33edd59a05370aa77628cbdb4ef1a97.setContent(html_4dc3f3d1ffd80efe87f72e93a2b9daf3);
+            
+        
+
+        marker_a772e92f46cdf948c0c1de2bbd330fd3.bindPopup(popup_c33edd59a05370aa77628cbdb4ef1a97)
+        ;
+
+        
+    
+    
+            marker_a772e92f46cdf948c0c1de2bbd330fd3.bindTooltip(
+                `<div>
+                     Arizona Diamondbacks
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a772e92f46cdf948c0c1de2bbd330fd3.setIcon(custom_icon_7e9d80867cbc186d5afde6e94b7c5861);
+            
+    
+            var circle_marker_b932b1e2dd8f10958849ef2de340cf89 = L.circleMarker(
+                [39.756111, -104.994167],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            circle_marker_b932b1e2dd8f10958849ef2de340cf89.bindTooltip(
+                `<div>
+                     Original location: Colorado Rockies
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5a4f6204e09cc8e3c9f9e8deba166eb8 = L.marker(
+                [39.756111, -104.994167],
+                {
+}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+        var custom_icon_a53b725538bfd54add09e890c41cbc17 = L.icon({
+  "iconUrl": "https://www.mlbstatic.com/team-logos/team-cap-on-light/115.svg",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "popupAnchor": [0, -15],
+});
+        marker_5a4f6204e09cc8e3c9f9e8deba166eb8.setIcon(custom_icon_a53b725538bfd54add09e890c41cbc17);
+        
+    
+        var popup_b05dba461add1e90ba3d7faeb76d8606 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1530cd0dcb6083cd123b76a5277d34e6 = $(`<div id="html_1530cd0dcb6083cd123b76a5277d34e6" style="width: 100.0%; height: 100.0%;"><b>Colorado Rockies</b><br>West</div>`)[0];
+                popup_b05dba461add1e90ba3d7faeb76d8606.setContent(html_1530cd0dcb6083cd123b76a5277d34e6);
+            
+        
+
+        marker_5a4f6204e09cc8e3c9f9e8deba166eb8.bindPopup(popup_b05dba461add1e90ba3d7faeb76d8606)
+        ;
+
+        
+    
+    
+            marker_5a4f6204e09cc8e3c9f9e8deba166eb8.bindTooltip(
+                `<div>
+                     Colorado Rockies
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5a4f6204e09cc8e3c9f9e8deba166eb8.setIcon(custom_icon_a53b725538bfd54add09e890c41cbc17);
+            
+    
+            var circle_marker_dc745aff1fee3901ab7f0032fee2eeec = L.circleMarker(
+                [34.073611, -118.24],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            circle_marker_dc745aff1fee3901ab7f0032fee2eeec.bindTooltip(
+                `<div>
+                     Original location: Los Angeles Dodgers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_92d0f4e872e07a33f9c0ee3cedbcf6d9 = L.marker(
+                [34.073611, -120.30354393874218],
+                {
+}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+        var custom_icon_037b11243b32b19cff3fc4194f7a7520 = L.icon({
+  "iconUrl": "https://www.mlbstatic.com/team-logos/team-cap-on-light/119.svg",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "popupAnchor": [0, -15],
+});
+        marker_92d0f4e872e07a33f9c0ee3cedbcf6d9.setIcon(custom_icon_037b11243b32b19cff3fc4194f7a7520);
+        
+    
+        var popup_e8339072f8932ef33e90afbe0a4583d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_93387fecab3db52ca1548a5206552031 = $(`<div id="html_93387fecab3db52ca1548a5206552031" style="width: 100.0%; height: 100.0%;"><b>Los Angeles Dodgers</b><br>West</div>`)[0];
+                popup_e8339072f8932ef33e90afbe0a4583d7.setContent(html_93387fecab3db52ca1548a5206552031);
+            
+        
+
+        marker_92d0f4e872e07a33f9c0ee3cedbcf6d9.bindPopup(popup_e8339072f8932ef33e90afbe0a4583d7)
+        ;
+
+        
+    
+    
+            marker_92d0f4e872e07a33f9c0ee3cedbcf6d9.bindTooltip(
+                `<div>
+                     Los Angeles Dodgers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_92d0f4e872e07a33f9c0ee3cedbcf6d9.setIcon(custom_icon_037b11243b32b19cff3fc4194f7a7520);
+            
+    
+            var circle_marker_9123a56447c67b15441d2b8e585f14fd = L.circleMarker(
+                [32.7073, -117.1566],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            circle_marker_9123a56447c67b15441d2b8e585f14fd.bindTooltip(
+                `<div>
+                     Original location: San Diego Padres
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1bb819768b09aca05db0aabf989e4870 = L.marker(
+                [32.680404700316075, -117.13873067881158],
+                {
+}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+        var custom_icon_9622e6cd169a16289154e7c55666400a = L.icon({
+  "iconUrl": "https://www.mlbstatic.com/team-logos/team-cap-on-light/135.svg",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "popupAnchor": [0, -15],
+});
+        marker_1bb819768b09aca05db0aabf989e4870.setIcon(custom_icon_9622e6cd169a16289154e7c55666400a);
+        
+    
+        var popup_2140f2fca5eec113761db7a4803150ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dbb4708e09613567db335c026f21db66 = $(`<div id="html_dbb4708e09613567db335c026f21db66" style="width: 100.0%; height: 100.0%;"><b>San Diego Padres</b><br>West</div>`)[0];
+                popup_2140f2fca5eec113761db7a4803150ac.setContent(html_dbb4708e09613567db335c026f21db66);
+            
+        
+
+        marker_1bb819768b09aca05db0aabf989e4870.bindPopup(popup_2140f2fca5eec113761db7a4803150ac)
+        ;
+
+        
+    
+    
+            marker_1bb819768b09aca05db0aabf989e4870.bindTooltip(
+                `<div>
+                     San Diego Padres
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1bb819768b09aca05db0aabf989e4870.setIcon(custom_icon_9622e6cd169a16289154e7c55666400a);
+            
+    
+            var circle_marker_d0677ef46eac87d53c411dee64f4d50c = L.circleMarker(
+                [37.778611, -122.389167],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            circle_marker_d0677ef46eac87d53c411dee64f4d50c.bindTooltip(
+                `<div>
+                     Original location: San Francisco Giants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0b924f9bb60636c42bbf56f1ace84bba = L.marker(
+                [38.067599257454106, -124.46200421396604],
+                {
+}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+        var custom_icon_cc58b7c9ed2c403b8a3ab130f118b9fa = L.icon({
+  "iconUrl": "https://www.mlbstatic.com/team-logos/team-cap-on-light/137.svg",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "popupAnchor": [0, -15],
+});
+        marker_0b924f9bb60636c42bbf56f1ace84bba.setIcon(custom_icon_cc58b7c9ed2c403b8a3ab130f118b9fa);
+        
+    
+        var popup_619abce2b086669da0ced28e009b43db = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8d2dbb8e86a79c4e63709b5df32be0e5 = $(`<div id="html_8d2dbb8e86a79c4e63709b5df32be0e5" style="width: 100.0%; height: 100.0%;"><b>San Francisco Giants</b><br>West</div>`)[0];
+                popup_619abce2b086669da0ced28e009b43db.setContent(html_8d2dbb8e86a79c4e63709b5df32be0e5);
+            
+        
+
+        marker_0b924f9bb60636c42bbf56f1ace84bba.bindPopup(popup_619abce2b086669da0ced28e009b43db)
+        ;
+
+        
+    
+    
+            marker_0b924f9bb60636c42bbf56f1ace84bba.bindTooltip(
+                `<div>
+                     San Francisco Giants
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0b924f9bb60636c42bbf56f1ace84bba.setIcon(custom_icon_cc58b7c9ed2c403b8a3ab130f118b9fa);
+            
+    
+            var poly_line_29ef067705e2036bc1bdad59ea5715ef = L.polyline(
+                [[44.981667, -93.278333], [41.31406024811041, -89.03867304003698], [39.051, -94.48], [41.31406024811041, -89.03867304003698], [41.495833, -81.685278], [42.339167, -83.048611]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            var poly_line_5f43e799d38ce7861f413f2a2bc4be23 = L.polyline(
+                [[43.641389, -79.389167], [42.84972062173009, -75.46811657851211], [42.34625, -71.09775], [42.84972062173009, -75.46811657851211], [39.84768034549222, -77.88328482108794], [27.768333, -82.653333]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            var poly_line_83d2f23186a765c083d328a7d7be44ea = L.polyline(
+                [[32.747361, -97.084167], [29.756944, -95.355556], [33.82717329968392, -115.83710338244623], [37.46267874254589, -120.12771878603397], [47.591, -122.333]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            var poly_line_5ace5cb6909c691c39329f22d81fa669 = L.polyline(
+                [[43.42092145181086, -88.21381591102458], [42.07140730007873, -86.00806704893843], [39.0975, -84.506667], [40.446944, -80.005833], [39.0975, -84.506667], [38.6225, -90.193056]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            var poly_line_81cc50bfeb55af72c27e7aeb3b11248a = L.polyline(
+                [[25.778056, -80.219722], [33.89, -84.468], [38.30898665450778, -75.74588217891205], [38.7363903782699, -72.30410542148789], [39.905833, -75.166389]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+    
+            var poly_line_6340ea576186612411e3741ad881f921 = L.polyline(
+                [[39.756111, -104.994167], [33.445278, -112.066944], [32.680404700316075, -117.13873067881158], [34.073611, -120.30354393874218], [38.067599257454106, -124.46200421396604]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d7d99f38b3f0dcf61f4e838d9495e2be);
+        
+</script>
+</html>

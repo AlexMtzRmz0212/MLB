@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MLB Championships</title>
+</head>
+<body>
+    <h1>MLB Championships Per Team</h1>
+    <label for="teams">Choose a team:</label>
+    <select id="teams"></select>
+    <button onclick="fetchChampionships()">Get Championships</button>
+    <p id="result"></p>
+
+    <script>
+        async function fetchTeams() {
+            const res = await fetch('/championships');
+            const teams = await res.json();
+            const select = document.getElementById('teams');
+            teams.forEach(team => {
+                const option = document.createElement('option');
+                option.value = team;
+                option.textContent = team;
+                select.appendChild(option);
+            });
+        }
+
+        async function fetchChampionships() {
+            const team = document.getElementById('teams').value;
+            const res = await fetch(`/championships?team=${team}`);
+            const data = await res.json();
+            if (data.championships !== undefined) {
+                document.getElementById('result').textContent = `${data.team} has won ${data.championships} championships.`;
+            } else {
+                document.getElementById('result').textContent = data.error || 'Something went wrong';
+            }
+        }
+
+        window.onload = fetchTeams;
+    </script>
+</body>
+</html>

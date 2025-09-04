@@ -1,0 +1,31 @@
+id,name,abbreviation,teamName,shortName,franchiseName,clubName,location,league,division,venue,firstYearOfPlay,yearsActive
+108,Los Angeles Angels,LAA,Angels,LA Angels,Los Angeles,Angels,Anaheim,American League,American League West,Angel Stadium,1961,64
+109,Arizona Diamondbacks,AZ,D-backs,Arizona,Arizona,Diamondbacks,Phoenix,National League,National League West,Chase Field,1996,29
+110,Baltimore Orioles,BAL,Orioles,Baltimore,Baltimore,Orioles,Baltimore,American League,American League East,Oriole Park at Camden Yards,1901,124
+111,Boston Red Sox,BOS,Red Sox,Boston,Boston,Red Sox,Boston,American League,American League East,Fenway Park,1901,124
+112,Chicago Cubs,CHC,Cubs,Chi Cubs,Chicago,Cubs,Chicago,National League,National League Central,Wrigley Field,1874,151
+113,Cincinnati Reds,CIN,Reds,Cincinnati,Cincinnati,Reds,Cincinnati,National League,National League Central,Great American Ball Park,1882,143
+114,Cleveland Guardians,CLE,Guardians,Cleveland,Cleveland,Guardians,Cleveland,American League,American League Central,Progressive Field,1901,124
+115,Colorado Rockies,COL,Rockies,Colorado,Colorado,Rockies,Denver,National League,National League West,Coors Field,1992,33
+116,Detroit Tigers,DET,Tigers,Detroit,Detroit,Tigers,Detroit,American League,American League Central,Comerica Park,1901,124
+117,Houston Astros,HOU,Astros,Houston,Houston,Astros,Houston,American League,American League West,Daikin Park,1962,63
+118,Kansas City Royals,KC,Royals,Kansas City,Kansas City,Royals,Kansas City,American League,American League Central,Kauffman Stadium,1968,57
+119,Los Angeles Dodgers,LAD,Dodgers,LA Dodgers,Los Angeles,Dodgers,Los Angeles,National League,National League West,Dodger Stadium,1884,141
+120,Washington Nationals,WSH,Nationals,Washington,Washington,Nationals,Washington,National League,National League East,Nationals Park,1968,57
+121,New York Mets,NYM,Mets,NY Mets,New York,Mets,Flushing,National League,National League East,Citi Field,1962,63
+133,Athletics,ATH,Athletics,Athletics,Athletics,Athletics,Sacramento,American League,American League West,Sutter Health Park,1901,124
+134,Pittsburgh Pirates,PIT,Pirates,Pittsburgh,Pittsburgh,Pirates,Pittsburgh,National League,National League Central,PNC Park,1882,143
+135,San Diego Padres,SD,Padres,San Diego,San Diego,Padres,San Diego,National League,National League West,Petco Park,1968,57
+136,Seattle Mariners,SEA,Mariners,Seattle,Seattle,Mariners,Seattle,American League,American League West,T-Mobile Park,1977,48
+137,San Francisco Giants,SF,Giants,San Francisco,San Francisco,Giants,San Francisco,National League,National League West,Oracle Park,1883,142
+138,St. Louis Cardinals,STL,Cardinals,St. Louis,St. Louis,Cardinals,St. Louis,National League,National League Central,Busch Stadium,1892,133
+139,Tampa Bay Rays,TB,Rays,Tampa Bay,Tampa Bay,Rays,Tampa,American League,American League East,George M. Steinbrenner Field,1996,29
+140,Texas Rangers,TEX,Rangers,Texas,Texas,Rangers,Arlington,American League,American League West,Globe Life Field,1961,64
+141,Toronto Blue Jays,TOR,Blue Jays,Toronto,Toronto,Blue Jays,Toronto,American League,American League East,Rogers Centre,1977,48
+142,Minnesota Twins,MIN,Twins,Minnesota,Minnesota,Twins,Minneapolis,American League,American League Central,Target Field,1901,124
+143,Philadelphia Phillies,PHI,Phillies,Philadelphia,Philadelphia,Phillies,Philadelphia,National League,National League East,Citizens Bank Park,1883,142
+144,Atlanta Braves,ATL,Braves,Atlanta,Atlanta,Braves,Atlanta,National League,National League East,Truist Park,1871,154
+145,Chicago White Sox,CWS,White Sox,Chi White Sox,Chicago,White Sox,Chicago,American League,American League Central,Rate Field,1901,124
+146,Miami Marlins,MIA,Marlins,Miami,Miami,Marlins,Miami,National League,National League East,loanDepot park,1991,34
+147,New York Yankees,NYY,Yankees,NY Yankees,New York,Yankees,Bronx,American League,American League East,Yankee Stadium,1903,122
+158,Milwaukee Brewers,MIL,Brewers,Milwaukee,Milwaukee,Brewers,Milwaukee,National League,National League Central,American Family Field,1968,57

@@ -1,0 +1,492 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>MLB Teams Info</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/2.0.8/js/dataTables.min.js"></script>
+    </head>
+    <body>
+
+    <table border="1" class="dataframe" id="mlb_teams_table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>id</th>
+      <th>name</th>
+      <th>abbreviation</th>
+      <th>teamName</th>
+      <th>shortName</th>
+      <th>franchiseName</th>
+      <th>clubName</th>
+      <th>location</th>
+      <th>league</th>
+      <th>division</th>
+      <th>venue</th>
+      <th>firstYearOfPlay</th>
+      <th>yearsActive</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>108</td>
+      <td>Los Angeles Angels</td>
+      <td>LAA</td>
+      <td>Angels</td>
+      <td>LA Angels</td>
+      <td>Los Angeles</td>
+      <td>Angels</td>
+      <td>Anaheim</td>
+      <td>American League</td>
+      <td>American League West</td>
+      <td>Angel Stadium</td>
+      <td>1961</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td>109</td>
+      <td>Arizona Diamondbacks</td>
+      <td>AZ</td>
+      <td>D-backs</td>
+      <td>Arizona</td>
+      <td>Arizona</td>
+      <td>Diamondbacks</td>
+      <td>Phoenix</td>
+      <td>National League</td>
+      <td>National League West</td>
+      <td>Chase Field</td>
+      <td>1996</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>110</td>
+      <td>Baltimore Orioles</td>
+      <td>BAL</td>
+      <td>Orioles</td>
+      <td>Baltimore</td>
+      <td>Baltimore</td>
+      <td>Orioles</td>
+      <td>Baltimore</td>
+      <td>American League</td>
+      <td>American League East</td>
+      <td>Oriole Park at Camden Yards</td>
+      <td>1901</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <td>111</td>
+      <td>Boston Red Sox</td>
+      <td>BOS</td>
+      <td>Red Sox</td>
+      <td>Boston</td>
+      <td>Boston</td>
+      <td>Red Sox</td>
+      <td>Boston</td>
+      <td>American League</td>
+      <td>American League East</td>
+      <td>Fenway Park</td>
+      <td>1901</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <td>112</td>
+      <td>Chicago Cubs</td>
+      <td>CHC</td>
+      <td>Cubs</td>
+      <td>Chi Cubs</td>
+      <td>Chicago</td>
+      <td>Cubs</td>
+      <td>Chicago</td>
+      <td>National League</td>
+      <td>National League Central</td>
+      <td>Wrigley Field</td>
+      <td>1874</td>
+      <td>151</td>
+    </tr>
+    <tr>
+      <td>113</td>
+      <td>Cincinnati Reds</td>
+      <td>CIN</td>
+      <td>Reds</td>
+      <td>Cincinnati</td>
+      <td>Cincinnati</td>
+      <td>Reds</td>
+      <td>Cincinnati</td>
+      <td>National League</td>
+      <td>National League Central</td>
+      <td>Great American Ball Park</td>
+      <td>1882</td>
+      <td>143</td>
+    </tr>
+    <tr>
+      <td>114</td>
+      <td>Cleveland Guardians</td>
+      <td>CLE</td>
+      <td>Guardians</td>
+      <td>Cleveland</td>
+      <td>Cleveland</td>
+      <td>Guardians</td>
+      <td>Cleveland</td>
+      <td>American League</td>
+      <td>American League Central</td>
+      <td>Progressive Field</td>
+      <td>1901</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <td>115</td>
+      <td>Colorado Rockies</td>
+      <td>COL</td>
+      <td>Rockies</td>
+      <td>Colorado</td>
+      <td>Colorado</td>
+      <td>Rockies</td>
+      <td>Denver</td>
+      <td>National League</td>
+      <td>National League West</td>
+      <td>Coors Field</td>
+      <td>1992</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td>116</td>
+      <td>Detroit Tigers</td>
+      <td>DET</td>
+      <td>Tigers</td>
+      <td>Detroit</td>
+      <td>Detroit</td>
+      <td>Tigers</td>
+      <td>Detroit</td>
+      <td>American League</td>
+      <td>American League Central</td>
+      <td>Comerica Park</td>
+      <td>1901</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <td>117</td>
+      <td>Houston Astros</td>
+      <td>HOU</td>
+      <td>Astros</td>
+      <td>Houston</td>
+      <td>Houston</td>
+      <td>Astros</td>
+      <td>Houston</td>
+      <td>American League</td>
+      <td>American League West</td>
+      <td>Daikin Park</td>
+      <td>1962</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <td>118</td>
+      <td>Kansas City Royals</td>
+      <td>KC</td>
+      <td>Royals</td>
+      <td>Kansas City</td>
+      <td>Kansas City</td>
+      <td>Royals</td>
+      <td>Kansas City</td>
+      <td>American League</td>
+      <td>American League Central</td>
+      <td>Kauffman Stadium</td>
+      <td>1968</td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <td>119</td>
+      <td>Los Angeles Dodgers</td>
+      <td>LAD</td>
+      <td>Dodgers</td>
+      <td>LA Dodgers</td>
+      <td>Los Angeles</td>
+      <td>Dodgers</td>
+      <td>Los Angeles</td>
+      <td>National League</td>
+      <td>National League West</td>
+      <td>Dodger Stadium</td>
+      <td>1884</td>
+      <td>141</td>
+    </tr>
+    <tr>
+      <td>120</td>
+      <td>Washington Nationals</td>
+      <td>WSH</td>
+      <td>Nationals</td>
+      <td>Washington</td>
+      <td>Washington</td>
+      <td>Nationals</td>
+      <td>Washington</td>
+      <td>National League</td>
+      <td>National League East</td>
+      <td>Nationals Park</td>
+      <td>1968</td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <td>121</td>
+      <td>New York Mets</td>
+      <td>NYM</td>
+      <td>Mets</td>
+      <td>NY Mets</td>
+      <td>New York</td>
+      <td>Mets</td>
+      <td>Flushing</td>
+      <td>National League</td>
+      <td>National League East</td>
+      <td>Citi Field</td>
+      <td>1962</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <td>133</td>
+      <td>Athletics</td>
+      <td>ATH</td>
+      <td>Athletics</td>
+      <td>Athletics</td>
+      <td>Athletics</td>
+      <td>Athletics</td>
+      <td>Sacramento</td>
+      <td>American League</td>
+      <td>American League West</td>
+      <td>Sutter Health Park</td>
+      <td>1901</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <td>134</td>
+      <td>Pittsburgh Pirates</td>
+      <td>PIT</td>
+      <td>Pirates</td>
+      <td>Pittsburgh</td>
+      <td>Pittsburgh</td>
+      <td>Pirates</td>
+      <td>Pittsburgh</td>
+      <td>National League</td>
+      <td>National League Central</td>
+      <td>PNC Park</td>
+      <td>1882</td>
+      <td>143</td>
+    </tr>
+    <tr>
+      <td>135</td>
+      <td>San Diego Padres</td>
+      <td>SD</td>
+      <td>Padres</td>
+      <td>San Diego</td>
+      <td>San Diego</td>
+      <td>Padres</td>
+      <td>San Diego</td>
+      <td>National League</td>
+      <td>National League West</td>
+      <td>Petco Park</td>
+      <td>1968</td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <td>136</td>
+      <td>Seattle Mariners</td>
+      <td>SEA</td>
+      <td>Mariners</td>
+      <td>Seattle</td>
+      <td>Seattle</td>
+      <td>Mariners</td>
+      <td>Seattle</td>
+      <td>American League</td>
+      <td>American League West</td>
+      <td>T-Mobile Park</td>
+      <td>1977</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>137</td>
+      <td>San Francisco Giants</td>
+      <td>SF</td>
+      <td>Giants</td>
+      <td>San Francisco</td>
+      <td>San Francisco</td>
+      <td>Giants</td>
+      <td>San Francisco</td>
+      <td>National League</td>
+      <td>National League West</td>
+      <td>Oracle Park</td>
+      <td>1883</td>
+      <td>142</td>
+    </tr>
+    <tr>
+      <td>138</td>
+      <td>St. Louis Cardinals</td>
+      <td>STL</td>
+      <td>Cardinals</td>
+      <td>St. Louis</td>
+      <td>St. Louis</td>
+      <td>Cardinals</td>
+      <td>St. Louis</td>
+      <td>National League</td>
+      <td>National League Central</td>
+      <td>Busch Stadium</td>
+      <td>1892</td>
+      <td>133</td>
+    </tr>
+    <tr>
+      <td>139</td>
+      <td>Tampa Bay Rays</td>
+      <td>TB</td>
+      <td>Rays</td>
+      <td>Tampa Bay</td>
+      <td>Tampa Bay</td>
+      <td>Rays</td>
+      <td>Tampa</td>
+      <td>American League</td>
+      <td>American League East</td>
+      <td>George M. Steinbrenner Field</td>
+      <td>1996</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>140</td>
+      <td>Texas Rangers</td>
+      <td>TEX</td>
+      <td>Rangers</td>
+      <td>Texas</td>
+      <td>Texas</td>
+      <td>Rangers</td>
+      <td>Arlington</td>
+      <td>American League</td>
+      <td>American League West</td>
+      <td>Globe Life Field</td>
+      <td>1961</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td>141</td>
+      <td>Toronto Blue Jays</td>
+      <td>TOR</td>
+      <td>Blue Jays</td>
+      <td>Toronto</td>
+      <td>Toronto</td>
+      <td>Blue Jays</td>
+      <td>Toronto</td>
+      <td>American League</td>
+      <td>American League East</td>
+      <td>Rogers Centre</td>
+      <td>1977</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>142</td>
+      <td>Minnesota Twins</td>
+      <td>MIN</td>
+      <td>Twins</td>
+      <td>Minnesota</td>
+      <td>Minnesota</td>
+      <td>Twins</td>
+      <td>Minneapolis</td>
+      <td>American League</td>
+      <td>American League Central</td>
+      <td>Target Field</td>
+      <td>1901</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <td>143</td>
+      <td>Philadelphia Phillies</td>
+      <td>PHI</td>
+      <td>Phillies</td>
+      <td>Philadelphia</td>
+      <td>Philadelphia</td>
+      <td>Phillies</td>
+      <td>Philadelphia</td>
+      <td>National League</td>
+      <td>National League East</td>
+      <td>Citizens Bank Park</td>
+      <td>1883</td>
+      <td>142</td>
+    </tr>
+    <tr>
+      <td>144</td>
+      <td>Atlanta Braves</td>
+      <td>ATL</td>
+      <td>Braves</td>
+      <td>Atlanta</td>
+      <td>Atlanta</td>
+      <td>Braves</td>
+      <td>Atlanta</td>
+      <td>National League</td>
+      <td>National League East</td>
+      <td>Truist Park</td>
+      <td>1871</td>
+      <td>154</td>
+    </tr>
+    <tr>
+      <td>145</td>
+      <td>Chicago White Sox</td>
+      <td>CWS</td>
+      <td>White Sox</td>
+      <td>Chi White Sox</td>
+      <td>Chicago</td>
+      <td>White Sox</td>
+      <td>Chicago</td>
+      <td>American League</td>
+      <td>American League Central</td>
+      <td>Rate Field</td>
+      <td>1901</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <td>146</td>
+      <td>Miami Marlins</td>
+      <td>MIA</td>
+      <td>Marlins</td>
+      <td>Miami</td>
+      <td>Miami</td>
+      <td>Marlins</td>
+      <td>Miami</td>
+      <td>National League</td>
+      <td>National League East</td>
+      <td>loanDepot park</td>
+      <td>1991</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>147</td>
+      <td>New York Yankees</td>
+      <td>NYY</td>
+      <td>Yankees</td>
+      <td>NY Yankees</td>
+      <td>New York</td>
+      <td>Yankees</td>
+      <td>Bronx</td>
+      <td>American League</td>
+      <td>American League East</td>
+      <td>Yankee Stadium</td>
+      <td>1903</td>
+      <td>122</td>
+    </tr>
+    <tr>
+      <td>158</td>
+      <td>Milwaukee Brewers</td>
+      <td>MIL</td>
+      <td>Brewers</td>
+      <td>Milwaukee</td>
+      <td>Milwaukee</td>
+      <td>Brewers</td>
+      <td>Milwaukee</td>
+      <td>National League</td>
+      <td>National League Central</td>
+      <td>American Family Field</td>
+      <td>1968</td>
+      <td>57</td>
+    </tr>
+  </tbody>
+</table>
+
+    <script>
+    $(document).ready( function () {
+        $('#mlb_teams_table').DataTable(); // Initialize DataTables on your table
+    } );
+    </script>
+
+    </body>
+    </html>
+    
